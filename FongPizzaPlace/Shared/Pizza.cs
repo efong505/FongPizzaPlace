@@ -12,12 +12,12 @@ namespace FongPizzaPlace.Shared
         public Pizza(int id, string name, decimal price,
                      Spiciness spiciness)
         {
-            this.Id = id;
-            this.Name = name
+            Id = id;
+            Name = name
               ?? throw new ArgumentNullException(nameof(name),
                  "A pizza needs a name!");
-            this.Price = price;
-            this.Spiciness = spiciness;
+            Price = price;
+            Spiciness = spiciness;
         }
         public int Id { get; }
         public string Name { get; }
